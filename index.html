@@ -1,22 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-extras@7.4.0/dist/aframe-extras.min.js"></script>
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-</head>
-<body>
-<a-scene embedded arjs>
-<a-marker type = 'pattern' url="pattern-marker.patt">
-<a-entity gltf-model="grapefruit-t-b.glb" position="0 0 0" scale="15 15 15"></a-entity>
-</a-marker>
-<a-entity id="marker" position="0 0 0"></a-entity>
-<a-entity camera></a-entity>
-
-
-</a-scene>
-    
-</body>
-</html> 
+    <!-- <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>-->
+  </head>
+  <body>
+    <a-scene>
+      <a-plane color="lightblue" rotation="-90 0 0" width="1" height="1"></a-plane>
+      <a-entity id="LemonModel" gltf-model="lemon.glb" scale="0.01 0.01 0.01" position="0.43496 0 -0.41816"></a-entity>
+      <e-entity id="GrapefruitModel" gltf-model="grapefruit-t-b.glb" scale="1 1 1" position="0 0 0"></e-entity>
+    </a-scene>
+  </body>
+</html>
